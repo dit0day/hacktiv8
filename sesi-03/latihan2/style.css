@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+
+.box{
+    background: blue;
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.box2{
+    background: red;
+    height: 100px;
+    width: 600px;
+    margin-left: 70px;
+    padding-left: 70px;
+}
