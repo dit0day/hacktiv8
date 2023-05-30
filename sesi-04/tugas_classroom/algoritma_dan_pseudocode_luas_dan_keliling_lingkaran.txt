@@ -1,0 +1,16 @@
+Algoritma :
+
+1. Masukkan panjang jari-jari lingkaran.
+2. Hitung keliling lingkaran dengan menggunakan rumus: keliling = 2 * 3,14 * jari-jari.
+3. Hitung luas lingkaran dengan menggunakan rumus: luas = 3,14 * jari-jari^2.
+4. Tampilkan hasil keliling dan luas lingkaran.
+5. Selesai.
+
+
+Pseudocode :
+
+1. Masukkan panjang jari-jari lingkaran (r).
+2. Keliling = 2 * 3.14 * r
+3. Luas = 3.14 * r^2
+4. Tampilkan keliling
+5. Tampilkan luas

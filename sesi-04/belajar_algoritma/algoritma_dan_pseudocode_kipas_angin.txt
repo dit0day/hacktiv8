@@ -1,0 +1,30 @@
+bagaimana cara menjalankan kipas angin :
+---
+flow :
+1. Pastikan kipas angin terhubung ke sumber listrik, periksa apakah kipas angin sudah terhubung dengan colokan listrik yang tepat.
+2. Periksa pengaturan kecepatan dan pastikan pengaturan kecepatan pada kipas angin berada pada tingkat yang diinginkan.
+3. Periksa arah putaran kipas, karena beberapa kipas angin dapat diatur untuk berputar ke kiri atau ke kanan.
+4. Menghidupkan kipas angin dengan menekan tombol daya atau tombol on.
+
+
+
+pseducode :
+
+if (kipas angin == "terhubung ke listrik") :
+    echo "sudah terhubung ke listrik";
+
+input kecepatan kipas angin (1, 2, 3):
+
+if (kecepatan == 1):
+    echo "kipas angin dalam mode normal";
+else if (kecepatan == 2):
+    echo "kipas angin dalam mode sedang";
+else if (kecepatan == 3):
+    echo "kipas angin dalam mode cepat";
+
+if (kipas angin == "spin"):
+    echo "kipas angin dapat berputar";
+else
+    echo "kipas angin tidak dapat berputar";
+return 0;
+
