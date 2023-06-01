@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Sesi 05</title>
+</head>
+<body>
+    <body style="background-color:greenyellow;">
+    <center><h1>Aditya Chandra Gunawan</h1></center>
+    <center><h2>Hacktiv8 - Program Looping JavaScript</h2></br></center>
+    <center><label>Tulis Pesanmu : </label><input id="pesan"><br></br></center>
+    <center><label>Berapa banyak : </label><input type="number" id="total"><br></br></center>
+    <center><button onclick="cetak()">Cetak Pesan!</button></center>
+    <ol id="tampilkan"></ol>
+
+    <script>
+        // const nama_variabel= document.getElementById("nama_variabel")
+        function cetak() 
+        {
+            const Looping = document.getElementById("tampilkan")
+            
+            pesan = document.getElementById("pesan").value
+            total = parseInt(document.getElementById("total").value);
+            
+            for (let i = 0; i < total; i++) 
+            {
+                Looping.innerHTML = Looping.innerHTML + `<li>${pesan}</li>`
+            }
+        }
+    </script>
+</body>
+</html>

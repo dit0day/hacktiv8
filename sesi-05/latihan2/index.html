@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penggunaan Variabel dan tipe data di JS</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+          width:50%;
+          padding: 10px;
+          height: 250px; /* Should be removed. Only for demonstration */
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+          }
+        }
+    </style>
+</head>
+<body>
+    <h1>Penggunaan Variabel dan tipe data di JS</h1>
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <h2>Penggunaan Variabel di JS</h2>
+
+            <div id="nama"></div>
+            <div id="lokasi"></div>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+            <h2>Tipe Data Number di JS</h2>
+    
+            <div id="hasil1"></div>
+        </div>
+        <div class="column" style="background-color:#ccc;">
+            <h2>Tipe Data String di JS</h2>
+    
+            <div id="hasil2"></div>
+        </div>
+        <div class="column" style="background-color:#ddd;">
+            <h2>Tipe Data Array di JS</h2>
+    
+            <div id="hasil3"></div>
+        </div>
+        <div class="column" style="background-color:#eee;">
+            <h2>Tipe Data Objek di JS</h2>
+    
+            <div id="hasil4"></div>
+        </div>
+        <div class="column" style="background-color:#aaa;">
+            <h2>Penggunaan Operator Aritmatika di JS</h2>
+    
+            <div id="penjumlahan"></div>
+            <div id="pengurangan"></div>
+            <div id="perkalian"></div>
+            <div id="pembagian"></div>
+            <div id="modulus"></div>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+            <h2>Membuat function di JS</h2>
+    
+            <div id="hasil5"></div>
+        </div>
+        <div class="column" style="background-color:#ccc;">
+            <h2>Mengenal event di JS</h2>
+            
+            <button onclick="tampilkan_nama()">KLIK SAYA</button>
+
+            <div id="hasil6"></div>
+        </div>
+    </div>
+
+    <script>
+        // penggunaan variabel
+        var nama = "Workshop 4 Days";
+        var lokasi = "Online";
+
+        document.getElementById("nama").innerHTML = nama;
+        document.getElementById("lokasi").innerHTML = lokasi;
+
+        // tipe data
+        var angka = 80;
+        var kalimat = "Belajar JS di Workshop WFDB";
+        var transport = ["Mobil", "Motor", "Pesawat", "Kapal"];
+
+        document. getElementById('hasil1').innerHTML = angka;
+        document. getElementById('hasil2').innerHTML = kalimat;
+        document. getElementById('hasil3').innerHTML = transport[1];
+        document. getElementById('hasil3').innerHTML = transport[3];
+
+        // tipe data objek
+        var manusia = {
+            nama : "Wijaya",
+            asal : "Jakarta",
+            usia : 26,
+        };
+
+        document.getElementById("hasil4").innerHTML = manusia.nama + " tinggal di " + manusia.asal;
+
+        // operator aritmatika
+        var bilangan1 = 6;
+        var bilangan2 = 2;
+
+        var penjumlahan = bilangan1 + bilangan2;
+        var pengurangan = bilangan1 - bilangan2;
+        var perkalian = bilangan1 * bilangan2;
+        var pembagian = bilangan1 / bilangan2;
+        var modulus = bilangan1 % bilangan2;
+
+        document.getElementById("penjumlahan").innerHTML = bilangan1 + " + " + bilangan2 + " = " + penjumlahan;
+        document.getElementById("pengurangan").innerHTML = bilangan1 + " - " + bilangan2 + " = " + pengurangan;
+        document.getElementById("perkalian").innerHTML = bilangan1 + " * " + bilangan2 + " = " + perkalian;
+        document.getElementById("pembagian").innerHTML = bilangan1 + " / " + bilangan2 + " = " + pembagian;
+        document.getElementById("modulus").innerHTML = bilangan1 + " % " + bilangan2 + " = " + modulus;
+
+        // membuat function
+        function func(){
+            return "Hacktiv8 Front End Web Development";
+        }
+
+        document.getElementById('hasil5').innerHTML = func();
+
+        // membuat function tampilkan_nama
+        function tampilkan_nama(){
+            document.getElementById('hasil6').innerHTML = "<h3>Nama saya adalah Fox </h3>";
+        }
+    </script>
+</body>
+</html>

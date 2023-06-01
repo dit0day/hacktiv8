@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Perulangan</title>
+</head>
+<body>
+    <button onclick="print()">Print Makanan Kesukaan</button>
+    <div id="text"></div>
+    <ul id="list"></ul>
+    <script>
+        function print() {
+            const dt1 = document.getElementById("text")
+            // // perulangan while
+            // let hitung = 0
+            // while (hitung <p 1000) {
+            //     // ini di dalam perulangan
+            //     dt1.innerHTML = dt1.innerHTML + "<p>Saya tidak akan terlambat lagi</p>"
+            //     hitung++
+            // }
+            // // perulangan for
+            // for (let hitung = 0; hitung < 3; hitung++) {
+            //     dt1.innerHTML = dt1.innerHTML + "</p>Saya sudah belajar for loop!</p>"
+            // }
+            // perulangan dengan array
+            const dt2 = document.getElementById("list")
+            const list_makanan = ["nasi goreng", "mie goreng", "ayam bakar"]
+            for (let index = 0; index < list_makanan.length; index++) {
+                dt2.innerHTML = dt2.innerHTML + `<li>${list_makanan[index]}</li>`
+            }
+        }
+    </script>
+</body>
+</html>
